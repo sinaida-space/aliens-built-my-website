@@ -1,0 +1,143 @@
+<!--
+  Superstar cookie consent banner — vanilla HTML/CSS/JS, zero dependencies.
+  No tracking/analytics script anywhere on the page should run until
+  window.superstarConsent.analytics === true. Wire your analytics loader to
+  check that flag (see bottom of file) rather than firing unconditionally.
+
+  Drop this markup + script near the end of <body>. Restyle the CSS variables
+  to match the site's palette/fonts — don't restructure the markup, since the
+  ARIA wiring depends on it.
+-->
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie preferences" hidden>
+  <div class="cookie-banner__text">
+    <p>
+      We use cookies for essential site function, and — only with your consent —
+      for analytics. Choose below; you can change this anytime via
+      <button type="button" class="cookie-banner__link" id="cookie-reopen-inline">Cookie settings</button>.
+      Read the <a href="/privacy">Privacy Policy</a>.
+    </p>
+  </div>
+  <div class="cookie-banner__actions">
+    <button type="button" id="cookie-customize" class="cookie-btn cookie-btn--ghost">Customize</button>
+    <button type="button" id="cookie-reject" class="cookie-btn cookie-btn--ghost">Reject all</button>
+    <button type="button" id="cookie-accept" class="cookie-btn cookie-btn--primary">Accept all</button>
+  </div>
+  <div class="cookie-banner__categories" id="cookie-categories" hidden>
+    <label>
+      <input type="checkbox" checked disabled />
+      Strictly necessary (always on — session, security)
+    </label>
+    <label>
+      <input type="checkbox" id="cookie-cat-analytics" />
+      Analytics
+    </label>
+    <button type="button" id="cookie-save" class="cookie-btn cookie-btn--primary">Save preferences</button>
+  </div>
+</div>
+
+<button type="button" id="cookie-reopen-footer" class="cookie-footer-link">Cookie settings</button>
+
+<style>
+  .cookie-banner {
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    max-width: 640px;
+    margin: 0 auto;
+    z-index: 9999;
+    background: var(--cookie-bg, #111);
+    color: var(--cookie-fg, #f2f2f2);
+    border: 1px solid var(--cookie-border, #333);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  }
+  .cookie-banner__actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem; }
+  .cookie-btn {
+    font: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--cookie-border, #333);
+    cursor: pointer;
+  }
+  .cookie-btn--primary { background: var(--cookie-accent, #e11); color: #fff; border-color: transparent; }
+  .cookie-btn--ghost { background: transparent; color: inherit; }
+  .cookie-btn:focus-visible, .cookie-banner__link:focus-visible, .cookie-footer-link:focus-visible {
+    outline: 2px solid var(--cookie-accent, #e11);
+    outline-offset: 2px;
+  }
+  .cookie-banner__link {
+    background: none; border: none; padding: 0; margin: 0;
+    color: inherit; text-decoration: underline; cursor: pointer; font: inherit;
+  }
+  .cookie-banner__categories { margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem; }
+  .cookie-footer-link {
+    position: fixed; left: 1rem; bottom: 1rem; z-index: 9998;
+    background: none; border: none; text-decoration: underline;
+    font-size: 0.8rem; color: var(--cookie-fg-muted, #999); cursor: pointer;
+    display: none;
+  }
+  .cookie-footer-link.is-visible { display: inline; }
+</style>
+
+<script>
+(function () {
+  var STORAGE_KEY = 'superstar-consent-v1';
+  var banner = document.getElementById('cookie-banner');
+  var footerLink = document.getElementById('cookie-reopen-footer');
+  var categories = document.getElementById('cookie-categories');
+  var analyticsCheckbox = document.getElementById('cookie-cat-analytics');
+
+  window.superstarConsent = { analytics: false };
+
+  function readConsent() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY)); } catch (e) { return null; }
+  }
+
+  function writeConsent(analytics) {
+    var record = { analytics: !!analytics, timestamp: new Date().toISOString(), policyVersion: 1 };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(record));
+    window.superstarConsent.analytics = !!analytics;
+    document.dispatchEvent(new CustomEvent('superstar-consent-change', { detail: record }));
+  }
+
+  function showBanner() {
+    banner.hidden = false;
+    footerLink.classList.remove('is-visible');
+  }
+
+  function hideBanner() {
+    banner.hidden = true;
+    footerLink.classList.add('is-visible');
+  }
+
+  var existing = readConsent();
+  if (existing) {
+    window.superstarConsent.analytics = !!existing.analytics;
+    hideBanner();
+  } else {
+    showBanner();
+  }
+
+  document.getElementById('cookie-accept').addEventListener('click', function () {
+    writeConsent(true);
+    hideBanner();
+  });
+  document.getElementById('cookie-reject').addEventListener('click', function () {
+    writeConsent(false);
+    hideBanner();
+  });
+  document.getElementById('cookie-customize').addEventListener('click', function () {
+    categories.hidden = !categories.hidden;
+  });
+  document.getElementById('cookie-save').addEventListener('click', function () {
+    writeConsent(analyticsCheckbox.checked);
+    hideBanner();
+  });
+  footerLink.addEventListener('click', showBanner);
+  document.getElementById('cookie-reopen-inline').addEventListener('click', showBanner);
+})();
+</script>
