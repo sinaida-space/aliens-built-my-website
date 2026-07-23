@@ -28,6 +28,18 @@ suboptimal font choice — order the report by actual severity, not checklist or
 - [ ] Fonts: commercial-license-free, self-hosted, `font-display: swap`
 - [ ] Technical SEO: sitemap, robots.txt, canonical tags, structured data
 
+### Low (generic-AI-look tells — see references/anti-slop.md)
+- [ ] Visual: no purple/violet gradients, cyan-on-dark, thick one-side card
+      borders, or blob-radius cards
+- [ ] Typography: real size hierarchy, no italic-serif-hero-by-default, no
+      crushed line-height/letter-spacing
+- [ ] Layout: not the generic hero→3-metrics→icon-feature-grid template applied
+      unexamined; no icon-in-a-box repeated identically across every card
+- [ ] Copy: no buzzword filler (streamline/empower/supercharge/world-class), no
+      "A, not B" construction, no excessive em-dashes
+- [ ] Motion: no decorative pulsing dots/fake cursors/auto-marquees/bounce
+      easing on standard UI
+
 ### Notes
 [Anything genuinely N/A — say why, don't silently skip]
 ```

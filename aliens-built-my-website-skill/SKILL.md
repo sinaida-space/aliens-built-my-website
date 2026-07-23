@@ -22,6 +22,11 @@ privacy policy, cookie banner, or a styled 404 — those are non-negotiable, not
 - `references/gdpr-checklist.md` — cookie banner behavior, privacy policy required
   fields, consent logging. Read before writing `templates/privacy-policy.md` or
   `templates/cookie-banner.html`.
+- `references/anti-slop.md` — catalog of AI-generated-web-design tells (purple
+  gradients, thick-border cards, icon-in-a-box feature grids, buzzword copy,
+  bounce easing, etc.) from [impeccable.style/slop](https://impeccable.style/slop/).
+  Run this during implementation and again at self-review — a site can pass
+  every other checklist here and still read as generic AI output if it trips these.
 - `references/seo-checklist.md` — technical SEO checklist curated from the
   [claude-seo](https://github.com/AgriciDaniel/claude-seo) project's `seo-technical`
   and `seo` skills. **Checklist knowledge only** — no code, scripts, or MCP
@@ -102,11 +107,14 @@ implementation does not start on unapproved content.
 - [ ] SEO basics per `references/seo-checklist.md` (semantic structure, meta tags,
       sitemap, robots.txt).
 - [ ] Glow-logo technique applied **only if explicitly requested this session**.
+- [ ] `references/anti-slop.md` swept during implementation, not just at the end —
+      it's cheaper to not write a thick-border card component than to unwind one.
 
 ### 4. Self-review before handing back
-Re-run `references/ux-heuristics.md` and `references/security-checklist.md` as a
-checklist against what was actually built, not what was intended. Report any item
-skipped and why (e.g. "no backend, so auth/backup items N/A").
+Re-run `references/ux-heuristics.md`, `references/security-checklist.md`, and
+`references/anti-slop.md` as a checklist against what was actually built, not what
+was intended. Report any item skipped and why (e.g. "no backend, so auth/backup
+items N/A").
 
 ### 5. Ship via GitHub properly
 Follow `references/gh-workflow.md`: an issue per feature/page, a branch per issue,
@@ -124,7 +132,9 @@ Run the identical checklist as build mode, but against the live site:
 2. Walk `templates/audit-checklist.md`, checking off each item against
    `references/ux-heuristics.md`, `references/security-checklist.md`,
    `references/gdpr-checklist.md`, `references/seo-checklist.md`,
-   `references/performance-adaptive.md`, and `references/fonts.md` (license + readability).
+   `references/performance-adaptive.md`, `references/fonts.md` (license + readability),
+   and `references/anti-slop.md` (treat repeated hits across categories, not one
+   stray gradient, as a real finding).
 3. Report as: ✅ present / ⚠️ present but weak / ❌ missing, grouped by category,
    most severe first (missing privacy policy or cookie banner outranks a font choice).
 4. Ask before fixing anything — audit is diagnosis, not an automatic rewrite. If she
