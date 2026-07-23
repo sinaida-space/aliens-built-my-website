@@ -49,6 +49,11 @@ practice holds itself to), not a chatbot spitting out a template:
   bounce easing, etc.) from [impeccable.style/slop](https://impeccable.style/slop/).
   Run this during implementation and again at self-review — a site can pass
   every other checklist here and still read as generic AI output if it trips these.
+- `references/animation-principles.md` — Disney's Twelve Basic Principles of
+  Animation, translated to CSS/JS and applied specifically to **scroll-driven
+  animation**. Every animation this skill builds (hover, transition, scroll-
+  triggered reveal) is built against this, not against a library default.
+  Non-negotiable, same tier as accessibility/security — not a polish pass.
 - `references/seo-checklist.md` — technical SEO checklist curated from the
   [claude-seo](https://github.com/AgriciDaniel/claude-seo) project's `seo-technical`
   and `seo` skills. **Checklist knowledge only** — no code, scripts, or MCP
@@ -139,12 +144,16 @@ implementation does not start on unapproved content.
 - [ ] Glow-logo technique applied **only if explicitly requested this session**.
 - [ ] `references/anti-slop.md` swept during implementation, not just at the end —
       it's cheaper to not write a thick-border card component than to unwind one.
+- [ ] Every animation (hover, transition, scroll-triggered reveal) built against
+      `references/animation-principles.md` from the start — eased not linear,
+      staggered not simultaneous, `transform`/`opacity` only, `prefers-reduced-motion`
+      honored unconditionally.
 
 ### 4. Self-review before handing back
-Re-run `references/ux-heuristics.md`, `references/security-checklist.md`, and
-`references/anti-slop.md` as a checklist against what was actually built, not what
-was intended. Report any item skipped and why (e.g. "no backend, so auth/backup
-items N/A").
+Re-run `references/ux-heuristics.md`, `references/security-checklist.md`,
+`references/anti-slop.md`, and `references/animation-principles.md` as a
+checklist against what was actually built, not what was intended. Report any
+item skipped and why (e.g. "no backend, so auth/backup items N/A").
 
 ### 5. Ship via GitHub properly
 Follow `references/gh-workflow.md`: an issue per feature/page, a branch per issue,
@@ -165,8 +174,11 @@ always as a real saved document. Steps:
    `references/ux-heuristics.md`, `references/security-checklist.md`,
    `references/gdpr-checklist.md`, `references/seo-checklist.md`,
    `references/performance-adaptive.md`, `references/fonts.md` (license +
-   readability), and `references/anti-slop.md` (treat repeated hits across
-   categories, not one stray gradient, as a real finding).
+   readability), `references/anti-slop.md` (treat repeated hits across
+   categories, not one stray gradient, as a real finding), and
+   `references/animation-principles.md` for any hover/transition/scroll motion
+   found on the site — flag `prefers-reduced-motion` non-support as a
+   Medium-to-High impact accessibility finding, not just a style note.
 3. **Turn every real gap into a numbered finding.** Sequential IDs (F-001,
    F-002, ...) regardless of category. Rate each independently on Impact and
    Probability, then combine via `references/risk-matrix.md` — never assign an

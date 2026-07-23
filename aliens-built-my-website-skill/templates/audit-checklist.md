@@ -40,6 +40,18 @@ suboptimal font choice — order the report by actual severity, not checklist or
 - [ ] Motion: no decorative pulsing dots/fake cursors/auto-marquees/bounce
       easing on standard UI
 
+### Animation (see references/animation-principles.md — Disney's 12 principles)
+- [ ] Easing: no `linear` on entrance/exit/hover motion; real acceleration/
+      deceleration curves used
+- [ ] Follow-through: multi-element entrances are staggered, not simultaneous
+- [ ] Performance/Solid Drawing: only `transform`/`opacity` animated, never
+      `width`/`height`/`margin`/`padding`/`top`/`left`
+- [ ] `prefers-reduced-motion` honored on every scroll/hover/transition effect
+      (flag missing support as Medium-High impact — it's an accessibility gap,
+      not a style nitpick)
+- [ ] Scroll-triggered effects use `IntersectionObserver`/`scroll-timeline`, not
+      raw scroll-event style recalculation; no scroll-jacking
+
 ### Notes
 [Anything genuinely N/A — say why, don't silently skip]
 ```

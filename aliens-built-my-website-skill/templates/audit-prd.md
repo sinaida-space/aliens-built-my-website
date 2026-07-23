@@ -40,7 +40,7 @@ nothing else.)_
 ## Findings in detail
 
 ### F-001 — [Short title]
-- **Category:** [GDPR / Security / UX / SEO / Performance / Anti-slop / Content]
+- **Category:** [GDPR / Security / UX / SEO / Performance / Anti-slop / Animation / Content]
 - **Impact:** [High/Medium/Low] — [one line why]
 - **Probability:** [High/Medium/Low] — [one line why]
 - **Rating:** [combined rating from the matrix]
