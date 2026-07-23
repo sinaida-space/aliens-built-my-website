@@ -15,11 +15,14 @@ suboptimal font choice — order the report by actual severity, not checklist or
 - [ ] Security headers present (CSP, HSTS, X-Content-Type-Options, Referrer-Policy)
 - [ ] No exposed secrets/API keys in client-shipped code
 
-### High (usability / trust)
+### High (usability / trust / accessibility)
 - [ ] Styled 404 page matching site's visual language
 - [ ] NN/g 10 heuristics spot-check (status visibility, error prevention/recovery,
       consistency, aesthetic minimalism)
-- [ ] Accessibility: contrast, keyboard nav, alt text, heading hierarchy
+- [ ] WCAG 2.1 AA pass per `references/accessibility-wcag.md`: keyboard
+      operability + no trap, focus visible, contrast (text 4.5:1, non-text 3:1),
+      alt text, heading hierarchy, form labels + error identification, `lang`
+      attribute, skip-to-content link, reflow at 320px
 - [ ] Menu: 3–7 items, ≤2 nesting levels, consistent placement
 
 ### Medium (performance / reach)

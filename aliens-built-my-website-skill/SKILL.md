@@ -41,6 +41,10 @@ practice holds itself to), not a chatbot spitting out a template:
   Read before content approval and before any audit.
 - `references/security-checklist.md` — HTTPS/TLS, security headers, auth, input
   handling, backups. Non-negotiable baseline for every build and audit.
+- `references/accessibility-wcag.md` — full WCAG 2.1 Level AA checklist
+  ([w3.org/TR/WCAG21](https://www.w3.org/TR/WCAG21/)), organized by the four
+  POUR principles, with practical implementation notes per success criterion.
+  Non-negotiable baseline for every build and audit, same tier as security/GDPR.
 - `references/gdpr-checklist.md` — cookie banner behavior, privacy policy required
   fields, consent logging. Read before writing `templates/privacy-policy.md` or
   `templates/cookie-banner.html`.
@@ -125,8 +129,10 @@ plain text/markdown first — no HTML, no styling. Present it and get explicit s
 implementation does not start on unapproved content.
 
 ### 3. Implementation checklist (apply to every build, no matter how small)
-- [ ] Semantic HTML, heading hierarchy, keyboard navigation, focus states, alt text —
-      see `references/ux-heuristics.md` §Accessibility.
+- [ ] Full WCAG 2.1 AA pass per `references/accessibility-wcag.md` — semantic
+      HTML, heading hierarchy, keyboard navigation, visible focus, alt text,
+      form labels/error identification, skip-to-content link, `lang` attribute,
+      contrast (text and non-text), reflow at 320px — not just the short list.
 - [ ] Menu: 3–7 top-level items, consistent placement, ≤2 levels of nesting, visible
       current-location state.
 - [ ] Fonts from `references/fonts.md` only.
@@ -150,10 +156,11 @@ implementation does not start on unapproved content.
       honored unconditionally.
 
 ### 4. Self-review before handing back
-Re-run `references/ux-heuristics.md`, `references/security-checklist.md`,
-`references/anti-slop.md`, and `references/animation-principles.md` as a
-checklist against what was actually built, not what was intended. Report any
-item skipped and why (e.g. "no backend, so auth/backup items N/A").
+Re-run `references/ux-heuristics.md`, `references/accessibility-wcag.md`,
+`references/security-checklist.md`, `references/anti-slop.md`, and
+`references/animation-principles.md` as a checklist against what was actually
+built, not what was intended. Report any item skipped and why (e.g. "no
+backend, so auth/backup items N/A").
 
 ### 5. Ship via GitHub properly
 Follow `references/gh-workflow.md`: an issue per feature/page, a branch per issue,
@@ -171,14 +178,16 @@ always as a real saved document. Steps:
    the tool can't reach it). Confirm what's in scope (whole site vs. specific
    pages/flows) if it's ambiguous.
 2. **Walk the checklist.** Use `templates/audit-checklist.md` against
-   `references/ux-heuristics.md`, `references/security-checklist.md`,
-   `references/gdpr-checklist.md`, `references/seo-checklist.md`,
-   `references/performance-adaptive.md`, `references/fonts.md` (license +
-   readability), `references/anti-slop.md` (treat repeated hits across
-   categories, not one stray gradient, as a real finding), and
-   `references/animation-principles.md` for any hover/transition/scroll motion
-   found on the site — flag `prefers-reduced-motion` non-support as a
-   Medium-to-High impact accessibility finding, not just a style note.
+   `references/ux-heuristics.md`, `references/accessibility-wcag.md` (the full
+   WCAG 2.1 AA pass, not just a contrast/alt-text spot check),
+   `references/security-checklist.md`, `references/gdpr-checklist.md`,
+   `references/seo-checklist.md`, `references/performance-adaptive.md`,
+   `references/fonts.md` (license + readability), `references/anti-slop.md`
+   (treat repeated hits across categories, not one stray gradient, as a real
+   finding), and `references/animation-principles.md` for any hover/
+   transition/scroll motion found on the site — flag `prefers-reduced-motion`
+   non-support as a Medium-to-High impact accessibility finding, not just a
+   style note.
 3. **Turn every real gap into a numbered finding.** Sequential IDs (F-001,
    F-002, ...) regardless of category. Rate each independently on Impact and
    Probability, then combine via `references/risk-matrix.md` — never assign an

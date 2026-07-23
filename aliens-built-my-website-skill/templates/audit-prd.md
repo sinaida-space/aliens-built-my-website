@@ -19,9 +19,10 @@ matters most.]
 
 ## Methodology
 Audited against this skill's standard checklists: Nielsen Norman Group's 10
-usability heuristics, GDPR (cross-checked against gdpr.eu), the security
-baseline, technical SEO, adaptive-performance strategy, font licensing, and the
-anti-slop catalog. Each finding below is rated independently on **Impact** and
+usability heuristics, WCAG 2.1 Level AA (w3.org/TR/WCAG21), GDPR (cross-checked
+against gdpr.eu), the security baseline, technical SEO, adaptive-performance
+strategy, font licensing, animation principles, and the anti-slop catalog.
+Each finding below is rated independently on **Impact** and
 **Probability** and combined into one rating via `references/risk-matrix.md` —
 see that file for the rating definitions.
 
@@ -40,7 +41,7 @@ nothing else.)_
 ## Findings in detail
 
 ### F-001 — [Short title]
-- **Category:** [GDPR / Security / UX / SEO / Performance / Anti-slop / Animation / Content]
+- **Category:** [GDPR / Security / Accessibility / UX / SEO / Performance / Anti-slop / Animation / Content]
 - **Impact:** [High/Medium/Low] — [one line why]
 - **Probability:** [High/Medium/Low] — [one line why]
 - **Rating:** [combined rating from the matrix]

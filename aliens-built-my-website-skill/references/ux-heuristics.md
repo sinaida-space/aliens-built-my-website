@@ -33,13 +33,10 @@
 - Fully keyboard-operable (Tab/Enter/Arrows), announced correctly by screen readers.
 - Mobile: hamburger or bottom nav, 44px+ tap targets, secondary links moved to footer.
 
-## Accessibility baseline (WCAG 2.2 AA)
-- Sufficient color contrast (4.5:1 body text, 3:1 large text/UI components).
-- Full keyboard navigation with visible focus states.
-- Alt text on all meaningful images; empty `alt=""` on decorative ones.
-- Proper heading hierarchy (`h1`→`h6`, no skipped levels); semantic landmarks
-  (`nav`, `main`, `footer`).
-- ARIA only where semantic HTML can't express the interaction — don't overuse it.
+## Accessibility
+Full WCAG 2.1 AA checklist lives in `references/accessibility-wcag.md` — read
+that before implementation and before any audit; it's the non-negotiable
+accessibility standard for this skill, not a summary bullet list.
 
 ## Performance targets (part of UX, not separate from it)
 - First Contentful Paint < 1.5s on 4G.
