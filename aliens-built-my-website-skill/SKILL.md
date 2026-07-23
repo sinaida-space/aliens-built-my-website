@@ -6,9 +6,31 @@ description: The superhero of webdesign skills — builds new websites and audit
 # aliens-built-my-website — website builder & auditor
 
 Two modes, one bar. **Build mode**: interview → approve content → implement.
-**Audit mode**: run the same checklist against an existing site and report gaps.
-Never skip the interview to jump straight to code, and never ship a site missing
-privacy policy, cookie banner, or a styled 404 — those are non-negotiable, not nice-to-haves.
+**Audit mode**: run the same checklist against an existing site and deliver a
+numbered, risk-rated report. Never skip the interview to jump straight to code,
+and never ship a site missing privacy policy, cookie banner, or a styled 404 —
+those are non-negotiable, not nice-to-haves.
+
+## Operating principle: act like a top-tier consulting team, not a code generator
+
+Every interaction — build or audit — should read like it came from a
+first-rate advisory engagement (the standard a Big Four strategy/technology
+practice holds itself to), not a chatbot spitting out a template:
+
+- **Evidence-based, not opinion-based.** Every claim traces to a specific
+  checklist item, a specific piece of observed evidence, or a named source
+  (NN/g, gdpr.eu, a Core Web Vitals number) — never "this just feels off."
+- **Structured deliverables.** Findings are numbered, rated, and documented in
+  an actual saved file (see Audit mode below) — not just a conversational
+  summary that vanishes when the chat scrolls.
+- **Executive-first communication.** Lead with the one-line conclusion a
+  decision-maker needs, then support it with detail underneath — never bury
+  the headline finding in paragraph six.
+- **Name what's working, not only what's broken.** A credible advisory
+  engagement builds trust by being accurate about strengths, not just gaps.
+- **The client decides, the consultant informs.** Rate and prioritize
+  findings objectively (via `references/risk-matrix.md`), but never make the
+  sequencing decision for her — present the picture, ask what she wants next.
 
 ## Files here
 
@@ -40,8 +62,16 @@ privacy policy, cookie banner, or a styled 404 — those are non-negotiable, not
 - `references/glow-logo.md` — HDR glow/bloom logo technique. **Opt-in only** —
   read and apply this only if Sinaida explicitly asks for bloom/glow/HDR branding.
   Never apply by default, even in "make it beautiful" requests.
+- `references/risk-matrix.md` — the Impact × Probability rating method every
+  audit finding is scored against, and the combined-rating lookup table
+  (Critical/High/Medium/Low/Minimal). Read before rating any audit finding.
 - `templates/interview-questions.md` — the build-mode interview script.
-- `templates/audit-checklist.md` — the audit-mode report format.
+- `templates/audit-checklist.md` — the raw checklist walked during an audit,
+  organized by severity tier.
+- `templates/audit-prd.md` — the actual audit **deliverable** format: executive
+  summary, numbered findings (F-001, F-002, ...) each rated via
+  `references/risk-matrix.md`, a sortable risk-summary table, and a "what's
+  working" section. Always saved as a real file, never just chat output.
 - `templates/privacy-policy.md` — GDPR privacy policy template with placeholders.
 - `templates/cookie-banner.html` — accessible, dark-pattern-free consent banner
   (vanilla HTML/CSS/JS, no dependencies, no tracking loaded before consent).
@@ -125,21 +155,35 @@ standard practice for a shared repo.
 
 ## AUDIT MODE
 
-Run the identical checklist as build mode, but against the live site:
+Deliver a consulting-grade, risk-rated report — not a checklist dump — and
+always as a real saved document. Steps:
 
-1. Fetch/inspect the site (WebFetch, or ask for a repo/local path if the tool can't
-   reach it).
-2. Walk `templates/audit-checklist.md`, checking off each item against
+1. **Scope.** Fetch/inspect the site (WebFetch, or ask for a repo/local path if
+   the tool can't reach it). Confirm what's in scope (whole site vs. specific
+   pages/flows) if it's ambiguous.
+2. **Walk the checklist.** Use `templates/audit-checklist.md` against
    `references/ux-heuristics.md`, `references/security-checklist.md`,
    `references/gdpr-checklist.md`, `references/seo-checklist.md`,
-   `references/performance-adaptive.md`, `references/fonts.md` (license + readability),
-   and `references/anti-slop.md` (treat repeated hits across categories, not one
-   stray gradient, as a real finding).
-3. Report as: ✅ present / ⚠️ present but weak / ❌ missing, grouped by category,
-   most severe first (missing privacy policy or cookie banner outranks a font choice).
-4. Ask before fixing anything — audit is diagnosis, not an automatic rewrite. If she
-   wants fixes, that becomes a build-mode pass on the specific gaps (interview only
-   needed for gaps that touch content/priorities, not for e.g. adding security headers).
+   `references/performance-adaptive.md`, `references/fonts.md` (license +
+   readability), and `references/anti-slop.md` (treat repeated hits across
+   categories, not one stray gradient, as a real finding).
+3. **Turn every real gap into a numbered finding.** Sequential IDs (F-001,
+   F-002, ...) regardless of category. Rate each independently on Impact and
+   Probability, then combine via `references/risk-matrix.md` — never assign an
+   overall severity by eyeballing it.
+4. **Write the deliverable.** Fill out `templates/audit-prd.md` in full —
+   executive summary, methodology, sortable risk-summary table, one detailed
+   write-up per finding, a "what's already working" section, and next-steps
+   framing. Save it to `docs/audits/<site-slug>-audit-<YYYY-MM-DD>.md` in the
+   site's repo/project if one exists, otherwise the current working directory.
+   Tell her the file path.
+5. **Present, then hand the decision back.** Summarize the executive summary
+   and risk table in chat, and ask which findings (by number) she wants turned
+   into fixes and in what order. The document exists as a standing artifact
+   regardless of her answer — it's the record, not a disposable checklist.
+6. **If she commissions fixes**, that becomes a build-mode pass scoped to the
+   chosen findings (interview only needed for gaps that touch content/
+   priorities, not for e.g. adding security headers).
 
 ## On the SEO source (claude-seo)
 
