@@ -95,7 +95,8 @@ implementation does not start on unapproved content.
 - [ ] `templates/cookie-banner.html` wired in, blocking non-essential
       scripts/cookies until consent, with Accept all / Reject all / Customize.
 - [ ] `templates/privacy-policy.md` filled in with this site's real facts (never
-      leave placeholder text live).
+      leave placeholder text live), and **linked from the footer of every page** —
+      not buried a click deeper.
 - [ ] A styled 404 page built per `templates/404.md` — must visually match the
       site, not a generic error page.
 - [ ] SEO basics per `references/seo-checklist.md` (semantic structure, meta tags,

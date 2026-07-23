@@ -14,7 +14,9 @@ website ([SITE URL]). Contact for privacy questions: [CONTACT EMAIL].
 - **Automatically**: IP address, browser/device type, pages visited, referrer
   (via [ANALYTICS TOOL, e.g. "privacy-respecting analytics" or "none"]).
 - **Provided by you**: [e.g. name and email via the contact form; mailing list
-  signup email].
+  signup email]. On [FORM NAME, e.g. "the contact form"], [REQUIRED FIELDS, e.g.
+  "name and email"] are required to [CONSEQUENCE, e.g. "send you a reply"];
+  [OPTIONAL FIELDS, e.g. "phone number"] are optional and only used if provided.
 - **Cookies**: see our [Cookie Policy / the Cookies section below].
 
 ## 3. Why we collect it
@@ -42,18 +44,28 @@ website ([SITE URL]). Contact for privacy questions: [CONTACT EMAIL].
 
 ## 7. Your rights
 Under GDPR you have the right to access, correct, delete, restrict, or port your
-data, and to object to or withdraw consent for its processing. To exercise any of
-these, contact [CONTACT EMAIL]. You also have the right to lodge a complaint with
-your local data protection authority.
+data, and to object to or withdraw consent for its processing. We respond to
+access and deletion requests within one month, and the first copy of your data is
+free. To exercise any of these, contact [CONTACT EMAIL]. You also have the right
+to lodge a complaint with your local data protection authority.
 
-## 8. Security
+## 8. Automated decision-making
+[This site does not use automated decision-making or profiling that produces
+legal or similarly significant effects. / If it does: describe what it does, the
+logic involved, and its significance/consequences for you.]
+
+## 9. Security
 We use industry-standard measures (encrypted transport via HTTPS, access controls)
 to protect your data. No online system is 100% secure, but we take reasonable steps
-to safeguard what we collect.
+to safeguard what we collect. [Only if this site has a backend/database: In the
+unlikely event of a data breach affecting your rights, we will notify the
+relevant supervisory authority within 72 hours and inform you directly where
+required.]
 
-## 9. Changes to this policy
+## 10. Changes to this policy
 We may update this policy from time to time; the "Last updated" date above reflects
 the most recent revision. Material changes will be noted here.
 
-## 10. Contact
-Questions about this policy: [CONTACT EMAIL].
+## 11. Contact
+Questions about this policy: [CONTACT EMAIL]. This policy is linked from every
+page of this site and is free to access at any time.
