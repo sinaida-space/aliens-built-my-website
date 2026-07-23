@@ -5,7 +5,7 @@ Report grouped by category, most severe first. Use ✅ present / ⚠️ present 
 suboptimal font choice — order the report by actual severity, not checklist order.
 
 ```
-## [Site name] — Superstar Audit
+## [Site name] — aliens-built-my-website Audit
 
 ### Critical (legal/security exposure)
 - [ ] GDPR: cookie banner present, blocks trackers pre-consent, offers

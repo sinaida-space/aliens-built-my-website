@@ -4,7 +4,7 @@
 
 # aliens built my website
 
-**Superstar** — a Claude skill that builds and audits websites against one bar:
+**aliens-built-my-website** — a Claude skill that builds and audits websites against one bar:
 does it have a real reason to exist, does it solve something, is it beautiful,
 usable, secure, and GDPR-compliant. No exceptions on the last part.
 
@@ -49,7 +49,7 @@ that are actually free to use commercially and actually readable.
 
 ## What's in here
 
-- **`superstar-skill/`** — the full Claude skill: build-mode interview, content
+- **`aliens-built-my-website-skill/`** — the full Claude skill: build-mode interview, content
   approval gate, implementation checklist, audit-mode report format, and every
   reference doc (UX heuristics, security, GDPR/cookie/privacy templates, SEO,
   fonts, adaptive performance, GitHub hygiene, and an opt-in HDR glow-logo

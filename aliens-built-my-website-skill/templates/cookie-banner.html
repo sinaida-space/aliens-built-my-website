@@ -1,7 +1,7 @@
 <!--
-  Superstar cookie consent banner — vanilla HTML/CSS/JS, zero dependencies.
+  aliens-built-my-website cookie consent banner — vanilla HTML/CSS/JS, zero dependencies.
   No tracking/analytics script anywhere on the page should run until
-  window.superstarConsent.analytics === true. Wire your analytics loader to
+  window.abmwConsent.analytics === true. Wire your analytics loader to
   check that flag (see bottom of file) rather than firing unconditionally.
 
   Drop this markup + script near the end of <body>. Restyle the CSS variables
@@ -85,13 +85,13 @@
 
 <script>
 (function () {
-  var STORAGE_KEY = 'superstar-consent-v1';
+  var STORAGE_KEY = 'abmw-consent-v1';
   var banner = document.getElementById('cookie-banner');
   var footerLink = document.getElementById('cookie-reopen-footer');
   var categories = document.getElementById('cookie-categories');
   var analyticsCheckbox = document.getElementById('cookie-cat-analytics');
 
-  window.superstarConsent = { analytics: false };
+  window.abmwConsent = { analytics: false };
 
   function readConsent() {
     try { return JSON.parse(localStorage.getItem(STORAGE_KEY)); } catch (e) { return null; }
@@ -100,8 +100,8 @@
   function writeConsent(analytics) {
     var record = { analytics: !!analytics, timestamp: new Date().toISOString(), policyVersion: 1 };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(record));
-    window.superstarConsent.analytics = !!analytics;
-    document.dispatchEvent(new CustomEvent('superstar-consent-change', { detail: record }));
+    window.abmwConsent.analytics = !!analytics;
+    document.dispatchEvent(new CustomEvent('abmw-consent-change', { detail: record }));
   }
 
   function showBanner() {
@@ -116,7 +116,7 @@
 
   var existing = readConsent();
   if (existing) {
-    window.superstarConsent.analytics = !!existing.analytics;
+    window.abmwConsent.analytics = !!existing.analytics;
     hideBanner();
   } else {
     showBanner();

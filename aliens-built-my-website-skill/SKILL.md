@@ -1,9 +1,9 @@
 ---
-name: superstar
+name: aliens-built-my-website
 description: The superhero of webdesign skills — builds new websites and audits existing ones against one bar: does it have a real reason to exist, does it solve a business problem, is it beautiful, usable, secure, and GDPR-compliant. For "build me a website" requests, runs a content-approval interview before any implementation. For "check/audit my site" requests, runs the same skill in audit mode against the identical checklist. Use whenever Sinaida asks to build, design, redesign, or review a website, landing page, or web app.
 ---
 
-# Superstar — website builder & auditor
+# aliens-built-my-website — website builder & auditor
 
 Two modes, one bar. **Build mode**: interview → approve content → implement.
 **Audit mode**: run the same checklist against an existing site and report gaps.
