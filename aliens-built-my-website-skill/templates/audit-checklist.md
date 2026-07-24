@@ -34,8 +34,11 @@ suboptimal font choice — order the report by actual severity, not checklist or
 ### Low (generic-AI-look tells — see references/anti-slop.md)
 - [ ] Visual: no purple/violet gradients, cyan-on-dark, thick one-side card
       borders, or blob-radius cards
-- [ ] Typography: real size hierarchy, no italic-serif-hero-by-default, no
-      crushed line-height/letter-spacing
+- [ ] Typography (`references/typography.md`): real modular size hierarchy
+      (not eyeballed), one consistent heading "vibe" across every section, no
+      italic-serif-hero-by-default, no crushed line-height/letter-spacing,
+      non-breaking spaces on number+unit pairs and before trailing dashes/
+      last words, curly quotes/en-em dashes, no widowed headings
 - [ ] Layout: not the generic hero→3-metrics→icon-feature-grid template applied
       unexamined; no icon-in-a-box repeated identically across every card
 - [ ] Copy: no buzzword filler (streamline/empower/supercharge/world-class), no

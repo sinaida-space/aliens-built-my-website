@@ -64,6 +64,11 @@ practice holds itself to), not a chatbot spitting out a template:
   integrations were imported from that repo (see "On the SEO source" below).
 - `references/fonts.md` — pre-vetted commercial-free, high-readability font
   stacks. Pick from here; don't introduce a new font without checking its license.
+- `references/typography.md` — heading hierarchy, modular type scale, line-
+  height/measure/vertical rhythm, and micro-typography (non-breaking spaces,
+  curly quotes, en/em dashes, widow/orphan control). Non-negotiable, same tier
+  as accessibility/security — every `h1`–`h3` on a site must read as one
+  consistent "vibe," not size-adjusted per section by eye.
 - `references/performance-adaptive.md` — how to build the fast/slow-network,
   low/high-GPU adaptive mode (a "light mode" that degrades gracefully).
 - `references/gh-workflow.md` — issues-as-task-manager + branch hygiene for
@@ -136,6 +141,11 @@ implementation does not start on unapproved content.
 - [ ] Menu: 3–7 top-level items, consistent placement, ≤2 levels of nesting, visible
       current-location state.
 - [ ] Fonts from `references/fonts.md` only.
+- [ ] Typography per `references/typography.md` — real modular type scale
+      (not eyeballed pixel values), one consistent heading "vibe" across every
+      section, correct line-height/measure, and micro-typography (non-breaking
+      spaces on number+unit pairs and before trailing dashes/last words, curly
+      quotes, en/em dashes, no widowed headings).
 - [ ] Adaptive/light mode per `references/performance-adaptive.md`.
 - [ ] Security headers + HTTPS assumptions per `references/security-checklist.md`.
 - [ ] `templates/cookie-banner.html` wired in, blocking non-essential
@@ -157,8 +167,9 @@ implementation does not start on unapproved content.
 
 ### 4. Self-review before handing back
 Re-run `references/ux-heuristics.md`, `references/accessibility-wcag.md`,
-`references/security-checklist.md`, `references/anti-slop.md`, and
-`references/animation-principles.md` as a checklist against what was actually
+`references/security-checklist.md`, `references/anti-slop.md`,
+`references/typography.md`, and `references/animation-principles.md` as a
+checklist against what was actually
 built, not what was intended. Report any item skipped and why (e.g. "no
 backend, so auth/backup items N/A").
 
@@ -182,7 +193,8 @@ always as a real saved document. Steps:
    WCAG 2.1 AA pass, not just a contrast/alt-text spot check),
    `references/security-checklist.md`, `references/gdpr-checklist.md`,
    `references/seo-checklist.md`, `references/performance-adaptive.md`,
-   `references/fonts.md` (license + readability), `references/anti-slop.md`
+   `references/fonts.md` (license + readability), `references/typography.md`
+   (heading hierarchy, type scale, micro-typography), `references/anti-slop.md`
    (treat repeated hits across categories, not one stray gradient, as a real
    finding), and `references/animation-principles.md` for any hover/
    transition/scroll motion found on the site — flag `prefers-reduced-motion`
