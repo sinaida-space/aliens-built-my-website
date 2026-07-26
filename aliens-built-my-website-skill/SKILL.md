@@ -62,6 +62,13 @@ practice holds itself to), not a chatbot spitting out a template:
   [claude-seo](https://github.com/AgriciDaniel/claude-seo) project's `seo-technical`
   and `seo` skills. **Checklist knowledge only** — no code, scripts, or MCP
   integrations were imported from that repo (see "On the SEO source" below).
+- `references/agentic-readiness.md` — checklist distilled from
+  [isitagentready.com](https://isitagentready.com): `robots.txt` AI-bot rules,
+  sitemap, `llms.txt`, Markdown content negotiation, Content Signals, Web Bot
+  Auth, MCP Server Card, Agent Skills, WebMCP, API Catalog, OAuth discovery,
+  and (commerce sites only) x402/MPP/UCP/ACP. Low priority for a portfolio
+  site, higher for anything with an API/booking/commerce flow — never
+  displaces accessibility/security/GDPR as the non-negotiable baseline.
 - `references/fonts.md` — pre-vetted commercial-free, high-readability font
   stacks. Pick from here; don't introduce a new font without checking its license.
 - `references/typography.md` — heading hierarchy, modular type scale, line-
@@ -157,6 +164,11 @@ implementation does not start on unapproved content.
       site, not a generic error page.
 - [ ] SEO basics per `references/seo-checklist.md` (semantic structure, meta tags,
       sitemap, robots.txt).
+- [ ] Agentic-readiness quick wins per `references/agentic-readiness.md`:
+      `robots.txt` with explicit AI-bot rules + sitemap directive, a short
+      `llms.txt` at site root, real semantic HTML/heading hierarchy. Deeper
+      protocol/commerce items only if the site has an API, MCP server, or
+      storefront to expose.
 - [ ] Glow-logo technique applied **only if explicitly requested this session**.
 - [ ] `references/anti-slop.md` swept during implementation, not just at the end —
       it's cheaper to not write a thick-border card component than to unwind one.
@@ -192,7 +204,10 @@ always as a real saved document. Steps:
    `references/ux-heuristics.md`, `references/accessibility-wcag.md` (the full
    WCAG 2.1 AA pass, not just a contrast/alt-text spot check),
    `references/security-checklist.md`, `references/gdpr-checklist.md`,
-   `references/seo-checklist.md`, `references/performance-adaptive.md`,
+   `references/seo-checklist.md`, `references/agentic-readiness.md` (robots.txt
+   AI-bot rules, sitemap, llms.txt, and protocol/commerce items — mark
+   explicitly N/A rather than skipping silently for a non-commerce site),
+   `references/performance-adaptive.md`,
    `references/fonts.md` (license + readability), `references/typography.md`
    (heading hierarchy, type scale, micro-typography), `references/anti-slop.md`
    (treat repeated hits across categories, not one stray gradient, as a real

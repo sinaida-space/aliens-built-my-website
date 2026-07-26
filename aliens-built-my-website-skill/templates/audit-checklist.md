@@ -31,6 +31,19 @@ suboptimal font choice — order the report by actual severity, not checklist or
 - [ ] Fonts: commercial-license-free, self-hosted, `font-display: swap`
 - [ ] Technical SEO: sitemap, robots.txt, canonical tags, structured data
 
+### Agentic readiness (see references/agentic-readiness.md)
+- [ ] `robots.txt` valid, has explicit AI-bot rules, references sitemap
+- [ ] XML sitemap present and current
+- [ ] `llms.txt` present at site root (short Markdown summary for LLM context)
+- [ ] Semantic HTML / heading hierarchy parseable by agents with no special
+      protocol (cross-reference with accessibility/SEO findings, don't
+      double-count)
+- [ ] Protocol-discovery items (MCP Server Card, Agent Skills, WebMCP, API
+      Catalog, OAuth discovery/RFC 9728) — mark N/A if the site has no
+      API/MCP server to expose
+- [ ] Commerce protocols (x402, MPP, UCP, ACP) — mark N/A unless the site
+      has a storefront/checkout
+
 ### Low (generic-AI-look tells — see references/anti-slop.md)
 - [ ] Visual: no purple/violet gradients, cyan-on-dark, thick one-side card
       borders, or blob-radius cards
