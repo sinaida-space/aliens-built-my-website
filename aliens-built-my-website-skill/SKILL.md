@@ -80,6 +80,12 @@ practice holds itself to), not a chatbot spitting out a template:
   low/high-GPU adaptive mode (a "light mode" that degrades gracefully).
 - `references/gh-workflow.md` — issues-as-task-manager + branch hygiene for
   syncing work to `sinaida-space/aliens-built-my-website`.
+- `references/design-resources.md` — curated external references (Aura,
+  21st.dev, Mobbin, DesignMD.supply, curated.design, and others) for pulling
+  real design directions, components, and animation techniques instead of
+  inventing generic ones. Use during the interview/design-plan step to offer
+  concrete options, and during implementation to source tokens/components —
+  always adapt into this site's own `tokens.css`, never ship copy-pasted.
 - `references/glow-logo.md` — HDR glow/bloom logo technique. **Opt-in only** —
   read and apply this only if Sinaida explicitly asks for bloom/glow/HDR branding.
   Never apply by default, even in "make it beautiful" requests.
@@ -140,7 +146,17 @@ plain text/markdown first — no HTML, no styling. Present it and get explicit s
 ("looks good" / edits requested) before touching implementation. This is the gate:
 implementation does not start on unapproved content.
 
+Alongside content, pull 2–3 concrete visual-direction options from
+`references/design-resources.md` matched to her stated priorities (question 6
+in the interview) and get a pick via AskUserQuestion — don't describe a
+direction in the abstract when a real reference is one link away.
+
 ### 3. Implementation checklist (apply to every build, no matter how small)
+- [ ] A single `tokens.css` (or equivalent) holding every color, font, spacing
+      unit, and grid value used on the site — pulled from `references/fonts.md`
+      and `references/typography.md`. Every other file references these tokens;
+      no hardcoded hex/px value gets introduced outside this file, by Sinaida or
+      by the agent. "Other colors simply don't exist" for implementation.
 - [ ] Full WCAG 2.1 AA pass per `references/accessibility-wcag.md` — semantic
       HTML, heading hierarchy, keyboard navigation, visible focus, alt text,
       form labels/error identification, skip-to-content link, `lang` attribute,

@@ -28,6 +28,13 @@ practice, not specific distrust of this workflow.
 - Squash-merge by default to keep `main` history readable, unless she wants full
   history preserved for a specific PR.
 
+## Large refactors: one block at a time
+For any change that touches more than a handful of files or rewrites a whole
+page/component, don't let the agent take the whole thing in one pass. Split it
+into blocks (e.g. one section, one component, one page at a time), verify each
+block before moving to the next. A confident-sounding agent is not a correct
+one — catching a bad block early is cheap; unwinding a full-site rewrite isn't.
+
 ## Push discipline
 - Batch related commits into one push rather than pushing after every file edit.
 - Before any push: `git status`, review the diff, confirm nothing sensitive
