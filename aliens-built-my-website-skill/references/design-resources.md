@@ -86,3 +86,6 @@ Sinaida, and adapt rather than clone — a reference is a starting point, and
    another site's class names, comments, or literal asset URLs in the code.
 3. **Audit mode**: these aren't part of the audit checklist itself — they're
    a build-time input, not something to score an existing site against.
+
+
+Sources: https://tochkicamp.ru/
