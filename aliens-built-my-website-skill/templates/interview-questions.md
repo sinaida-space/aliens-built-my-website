@@ -30,9 +30,9 @@ until all of these have real answers (not defaults you invented).
    conversion, accessibility. Use this as the tie-breaker later (e.g. a heavy hero
    animation vs. fast load time).
 
-7. **Bloom/glow branding** — default no. Only proceed to `references/glow-logo.md`
+7. **Bloom/glow branding** — default no. Only proceed to `references/design/glow-logo.md`
    if she says yes here (or asked for it earlier in the conversation).
 
 8. **GitHub workflow** — confirm scope for this session: new issue(s) to open, which
    branch to work from, whether this is a fresh feature or a fix to something already
-   in flight. See `references/gh-workflow.md`.
+   in flight. See `references/process/gh-workflow.md`.

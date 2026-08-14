@@ -64,7 +64,7 @@ h1 { font-size: clamp(2rem, 1.5rem + 2vw, 3.5rem); }
 
 - **Body text line-height**: 1.4–1.6 (unitless, e.g. `line-height: 1.5`).
   Below 1.4 reads as cramped; matches the anti-slop rule against "crushed
-  line-height" (`references/anti-slop.md`).
+  line-height" (`references/design/anti-slop.md`).
 - **Heading line-height**: tighter than body, 1.1–1.3 — headings are short
   enough that generous leading just adds dead space.
 - **Measure (line length)**: 45–75 characters per line for body text (66 is
@@ -84,7 +84,7 @@ h1 { font-size: clamp(2rem, 1.5rem + 2vw, 3.5rem); }
   A third typeface needs a specific justification (e.g. a monospace for code).
 - Use weight and size to create contrast, not more typefaces. A heading in
   700 and body in 400 of the *same* family is often cleaner than two families.
-- Pick fonts from `references/fonts.md` — license and legibility already vetted.
+- Pick fonts from `references/design/fonts.md` — license and legibility already vetted.
 
 ## 5. Micro-typography — the details that separate "designed" from "typed"
 
@@ -132,7 +132,7 @@ p { text-wrap: pretty; } /* where supported — orphan control for body text */
   characters (`½`) where available rather than `1/2`, if the brand voice is
   precise/clinical (matches Sinaida's ECG/lab-note aesthetic).
 
-## 6. Contrast and accessibility (ties to `references/accessibility-wcag.md`)
+## 6. Contrast and accessibility (ties to `references/compliance/accessibility-wcag.md`)
 
 - Body text: 4.5:1 contrast minimum against its background (WCAG 1.4.3).
 - Large text (24px+/19px+bold): 3:1 minimum.
@@ -158,4 +158,4 @@ p { text-wrap: pretty; } /* where supported — orphan control for body text */
 - [ ] No orphaned single words on headings/pull-quotes (`text-wrap: balance`
       or manual `&nbsp;`).
 - [ ] Contrast meets WCAG AA (4.5:1 body / 3:1 large text).
-- [ ] Maximum two typefaces, both from `references/fonts.md`.
+- [ ] Maximum two typefaces, both from `references/design/fonts.md`.

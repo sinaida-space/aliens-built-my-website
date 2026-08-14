@@ -9,7 +9,7 @@ own `tokens.css` and voice — never ship a copy-pasted block unchanged).
 
 Always disclose which site inspired a direction when presenting options to
 Sinaida, and adapt rather than clone — a reference is a starting point, and
-`references/anti-slop.md` still applies to whatever comes out the other end.
+`references/design/anti-slop.md` still applies to whatever comes out the other end.
 
 ## Full design systems / component + token libraries
 - [aura.build](https://www.aura.build/) — ready-made design systems, skills,
@@ -43,11 +43,13 @@ Sinaida, and adapt rather than clone — a reference is a starting point, and
 - [cta.gallery](http://cta.gallery) — call-to-action section patterns.
 - [rebrand.gallery](http://rebrand.gallery) — brand identity/rebrand case studies.
 - [hugeicons.com](http://hugeicons.com) — icon sets.
+- [icons0.dev](https://icons0.dev/) — search across ~200k icons from 150 sets
+  in one place instead of hunting per-library; one-command install.
 
 ## Animation and motion
 - [appmotion.design](http://appmotion.design) — app motion-design reference
   reel. Cross-check anything pulled from here against
-  `references/animation-principles.md` — a slick reference clip isn't
+  `references/design/animation-principles.md` — a slick reference clip isn't
   automatically eased/staggered/reduced-motion-safe.
 - [transitions.dev](https://transitions.dev/) — baseline web-app transition
   patterns.
@@ -61,10 +63,10 @@ Sinaida, and adapt rather than clone — a reference is a starting point, and
 - [orbs.jakubantalik.com](https://orbs.jakubantalik.com/) — animated orb
   effects for AI-style interfaces.
 - [originkit.dev](https://originkit.dev/) — free library of animated components.
-- These are high-novelty/high-cost effects — treat like `references/glow-logo.md`:
+- These are high-novelty/high-cost effects — treat like `references/design/glow-logo.md`:
   only pull one in if Sinaida explicitly wants that specific look, not by
   default for "make it beautiful." Check performance cost against
-  `references/performance-adaptive.md` before shipping any WebGL/canvas effect.
+  `references/ux/performance-adaptive.md` before shipping any WebGL/canvas effect.
 
 ## AI-agent-facing UI (relevant only if the site has a chat/agent interface)
 - [aicss.dev](https://aicss.dev/) — UI components for AI chat interfaces.

@@ -23,7 +23,7 @@ usability heuristics, WCAG 2.1 Level AA (w3.org/TR/WCAG21), GDPR (cross-checked
 against gdpr.eu), the security baseline, technical SEO, adaptive-performance
 strategy, font licensing, animation principles, and the anti-slop catalog.
 Each finding below is rated independently on **Impact** and
-**Probability** and combined into one rating via `references/risk-matrix.md` —
+**Probability** and combined into one rating via `references/compliance/risk-matrix.md` —
 see that file for the rating definitions.
 
 ## Risk summary

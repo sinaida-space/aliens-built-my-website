@@ -19,7 +19,7 @@ suboptimal font choice — order the report by actual severity, not checklist or
 - [ ] Styled 404 page matching site's visual language
 - [ ] NN/g 10 heuristics spot-check (status visibility, error prevention/recovery,
       consistency, aesthetic minimalism)
-- [ ] WCAG 2.1 AA pass per `references/accessibility-wcag.md`: keyboard
+- [ ] WCAG 2.1 AA pass per `references/compliance/accessibility-wcag.md`: keyboard
       operability + no trap, focus visible, contrast (text 4.5:1, non-text 3:1),
       alt text, heading hierarchy, form labels + error identification, `lang`
       attribute, skip-to-content link, reflow at 320px
@@ -31,7 +31,7 @@ suboptimal font choice — order the report by actual severity, not checklist or
 - [ ] Fonts: commercial-license-free, self-hosted, `font-display: swap`
 - [ ] Technical SEO: sitemap, robots.txt, canonical tags, structured data
 
-### Agentic readiness (see references/agentic-readiness.md)
+### Agentic readiness (see references/growth/agentic-readiness.md)
 - [ ] `robots.txt` valid, has explicit AI-bot rules, references sitemap
 - [ ] XML sitemap present and current
 - [ ] `llms.txt` present at site root (short Markdown summary for LLM context)
@@ -44,10 +44,10 @@ suboptimal font choice — order the report by actual severity, not checklist or
 - [ ] Commerce protocols (x402, MPP, UCP, ACP) — mark N/A unless the site
       has a storefront/checkout
 
-### Low (generic-AI-look tells — see references/anti-slop.md)
+### Low (generic-AI-look tells — see references/design/anti-slop.md)
 - [ ] Visual: no purple/violet gradients, cyan-on-dark, thick one-side card
       borders, or blob-radius cards
-- [ ] Typography (`references/typography.md`): real modular size hierarchy
+- [ ] Typography (`references/design/typography.md`): real modular size hierarchy
       (not eyeballed), one consistent heading "vibe" across every section, no
       italic-serif-hero-by-default, no crushed line-height/letter-spacing,
       non-breaking spaces on number+unit pairs and before trailing dashes/
@@ -59,7 +59,7 @@ suboptimal font choice — order the report by actual severity, not checklist or
 - [ ] Motion: no decorative pulsing dots/fake cursors/auto-marquees/bounce
       easing on standard UI
 
-### Animation (see references/animation-principles.md — Disney's 12 principles)
+### Animation (see references/design/animation-principles.md — Disney's 12 principles)
 - [ ] Easing: no `linear` on entrance/exit/hover motion; real acceleration/
       deceleration curves used
 - [ ] Follow-through: multi-element entrances are staggered, not simultaneous

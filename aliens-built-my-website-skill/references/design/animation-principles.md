@@ -5,7 +5,7 @@ Source: Disney's [Twelve Basic Principles of Animation](https://en.wikipedia.org
 skill builds — micro-interactions, page transitions, hover states, and
 **scroll-driven animation specifically** — is built against these, not against
 whatever a CSS animation library defaults to. This is also a direct extension
-of `references/anti-slop.md`: most of the motion tells cataloged there (bounce
+of `references/design/anti-slop.md`: most of the motion tells cataloged there (bounce
 easing on standard UI, fake cursors, decorative pulsing) are exactly what you
 get from ignoring these principles and reaching for a library default instead.
 
@@ -77,7 +77,7 @@ get from ignoring these principles and reaching for a library default instead.
     non-uniformly unless that's the deliberate squash/stretch; don't let text
     reflow/jump mid-transition (animate opacity/transform, not layout
     properties — this is also a hard performance requirement, see
-    `references/performance-adaptive.md` and `references/anti-slop.md`'s ban
+    `references/ux/performance-adaptive.md` and `references/design/anti-slop.md`'s ban
     on animating width/height/padding/margin).
 12. **Appeal** — the motion should feel like it belongs to this specific site,
     not like a generic animation-library default applied uniformly. Match
@@ -99,7 +99,7 @@ Any scroll-triggered animation on a site built or audited by this skill must:
 - Honor `prefers-reduced-motion` unconditionally — when set, scroll-triggered
   animation reduces to a simple opacity fade (or nothing) with no
   translate/scale motion, full stop, regardless of how good the fuller version
-  looks (see `references/performance-adaptive.md`).
+  looks (see `references/ux/performance-adaptive.md`).
 - Never block scroll or hijack scroll position (no scroll-jacking a native
   scrollbar to force a slower narrative pace) unless this is an explicitly
   commissioned art-direction piece and Sinaida has confirmed she wants that
@@ -113,10 +113,10 @@ Any scroll-triggered animation on a site built or audited by this skill must:
   not as a later polish pass — it's cheaper to build staggered, eased motion
   from the start than to retrofit it onto a `transition: all` codebase.
 - **Self-review**: re-check animated elements against these twelve principles
-  specifically, in addition to `references/anti-slop.md`'s motion section.
+  specifically, in addition to `references/design/anti-slop.md`'s motion section.
 - **Audit mode**: any scroll/hover/transition motion found on an audited site
   gets evaluated against this file; findings go into the audit PRD
   (`templates/audit-prd.md`) under category `Animation`, rated via
-  `references/risk-matrix.md` like any other finding (usually Low/Medium impact
+  `references/compliance/risk-matrix.md` like any other finding (usually Low/Medium impact
   unless the motion actively breaks usability or accessibility, e.g. ignoring
   `prefers-reduced-motion`, which is a Medium-to-High impact accessibility gap).

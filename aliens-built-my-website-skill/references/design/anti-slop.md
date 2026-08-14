@@ -30,7 +30,7 @@ if it trips these.
 ## Typography
 - Font sizes must have real contrast between levels — if a heading and its body
   text are within a few px of each other, the hierarchy isn't working. Check
-  against `references/fonts.md`'s stacks, but the *sizes* need deliberate jumps
+  against `references/design/fonts.md`'s stacks, but the *sizes* need deliberate jumps
   (e.g. a type scale, not arbitrary close values).
 - Don't default to a single typeface for everything — a heading/body pairing (or
   a deliberate single-family choice with real weight/size contrast) reads as
@@ -98,7 +98,7 @@ if it trips these.
   default transition curve.
 - Never animate `width`/`height`/`padding`/`margin` — animate `transform`/`opacity`
   instead, both for the layout-jank reason and because it's also a raw
-  performance requirement (see `references/performance-adaptive.md`).
+  performance requirement (see `references/ux/performance-adaptive.md`).
 - Avoid reflexive image scale/rotate-on-hover as the default "interactive" tell
   for every image on a page.
 
@@ -118,7 +118,7 @@ elsewhere but restate here because they're also slop tells)
 - No content left at `opacity: 0` at rest (a common animation-library mistake
   that leaves text invisible if JS fails or hasn't fired yet).
 - Contrast must clear WCAG AA (4.5:1 body text) — already required in
-  `references/ux-heuristics.md`, restated because low-contrast text is also a
+  `references/ux/ux-heuristics.md`, restated because low-contrast text is also a
   specific slop tell (the "washed out AI pastel" look).
 - No skipped heading levels.
 - Body text never below 12px.

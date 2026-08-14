@@ -10,7 +10,7 @@ real trade-offs (e.g. sign-language interpretation for every video) that need
 a business decision, not a blanket rule.
 
 This supersedes the short "Accessibility baseline" note in
-`references/ux-heuristics.md` — that file now points here for detail.
+`references/ux/ux-heuristics.md` — that file now points here for detail.
 
 ## Perceivable
 
@@ -64,8 +64,8 @@ except logos or where the exact rendering is essential.
 
 **1.4.10 Reflow (AA)** — content reflows cleanly at 320px width (portrait
 mobile) without horizontal scroll or content loss — direct overlap with the
-mobile-responsive requirements in `references/ux-heuristics.md` and
-`references/seo-checklist.md`.
+mobile-responsive requirements in `references/ux/ux-heuristics.md` and
+`references/growth/seo-checklist.md`.
 
 **1.4.11 Non-text contrast (AA)** — UI components (button borders, form
 field outlines, focus indicators, icon-only controls) and meaningful graphics
@@ -96,7 +96,7 @@ fires globally and can't be turned off (breaks speech-input and other AT users).
 **2.2.1 Timing adjustable (A)** / **2.2.2 Pause, stop, hide (A)** — any time
 limit (session timeout, auto-advancing carousel) can be extended/turned off,
 and any auto-updating/moving/auto-playing content (carousels, marquees) has a
-visible pause control. Cross-reference `references/anti-slop.md`'s ban on
+visible pause control. Cross-reference `references/design/anti-slop.md`'s ban on
 auto-scrolling marquees — here it's also a hard accessibility requirement, not
 just a style preference.
 
@@ -108,7 +108,7 @@ any animated background against this explicitly, don't assume it's fine.
 until focused) as the first focusable element on every page.
 
 **2.4.2 Page titled (A)** — every page has a real, unique, descriptive `<title>`
-— overlaps directly with `references/seo-checklist.md`'s on-page basics.
+— overlaps directly with `references/growth/seo-checklist.md`'s on-page basics.
 
 **2.4.3 Focus order (A)** — tab order follows visual/reading order; never let
 a CSS layout trick (grid/flex reordering) scramble it.
@@ -145,7 +145,7 @@ says "Send") — voice-control users refer to controls by what they see.
 
 **Target size — worth adopting even though it's AAA (2.5.5):** interactive
 targets ≥44×44 CSS px with adequate spacing. Already required as a mobile
-usability item in `references/ux-heuristics.md`; treat it as a real requirement
+usability item in `references/ux/ux-heuristics.md`; treat it as a real requirement
 here too even though the WCAG level is technically AAA.
 
 ## Understandable
@@ -161,7 +161,7 @@ auto-navigating away) without the user initiating it or being warned first.
 **3.2.3 Consistent navigation (AA)** / **3.2.4 Consistent identification (AA)**
 — nav structure and repeated component patterns (icons, buttons) stay
 consistent in order and meaning across every page — overlaps directly with
-`references/ux-heuristics.md`'s NN/g consistency heuristic and menu-design rules.
+`references/ux/ux-heuristics.md`'s NN/g consistency heuristic and menu-design rules.
 
 **3.3.1 Error identification (A)** — form errors are described in text
 (not just a red outline), identify which field, and state what's wrong.
@@ -200,9 +200,9 @@ to any AJAX-driven interaction (contact form submission, filtering).
   implementation checklist in `SKILL.md` — treat it as equally non-negotiable
   as GDPR/security, not a nice-to-have.
 - **Self-review**: check the build against this file's Level AA items
-  specifically (not just the shorter summary in `references/ux-heuristics.md`).
+  specifically (not just the shorter summary in `references/ux/ux-heuristics.md`).
 - **Audit mode**: any WCAG gap becomes a numbered finding in the audit PRD
-  under category `Accessibility`, rated via `references/risk-matrix.md`.
+  under category `Accessibility`, rated via `references/compliance/risk-matrix.md`.
   Missing keyboard operability, missing alt text, and contrast failures are
   typically **High impact** (they fully block a class of users, and increasingly
   carry real legal exposure) — don't under-rate them as cosmetic.

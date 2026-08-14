@@ -55,6 +55,6 @@ skills — checklist knowledge only, no scripts/code/MCP integrations imported
 
 ## Security-adjacent SEO signals
 - HTTPS is a confirmed (if lightweight) ranking signal — already required by
-  `references/security-checklist.md`.
+  `references/compliance/security-checklist.md`.
 - Flag any script that hijacks the back button via `history.pushState`/`replaceState`
   abuse — a Google spam-policy violation, not just bad UX.

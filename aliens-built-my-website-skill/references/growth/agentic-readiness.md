@@ -10,7 +10,7 @@ flow. Never let it displace accessibility/security/GDPR, which stay non-negotiab
 ## 1. Discoverability
 - [ ] `robots.txt` at site root, valid syntax, references the sitemap
       (`Sitemap: https://example.com/sitemap.xml`).
-- [ ] XML sitemap present and current (matches `references/seo-checklist.md`'s
+- [ ] XML sitemap present and current (matches `references/growth/seo-checklist.md`'s
       sitemap item — same file serves both SEO and agent crawlers).
 - [ ] Homepage response includes useful discovery metadata: `Link` headers or
       `<link>` tags pointing agents at machine-readable resources (sitemap,
@@ -80,7 +80,7 @@ agent should be able to transact against.
 2. A current XML sitemap.
 3. A short `llms.txt` at site root.
 4. Semantic HTML and real heading hierarchy (already required by
-   `references/accessibility-wcag.md` and `references/seo-checklist.md` — it's
+   `references/compliance/accessibility-wcag.md` and `references/growth/seo-checklist.md` — it's
    also what makes a page parseable by an agent with no special protocol at all).
 
 ## What to skip for a personal art/portfolio site
