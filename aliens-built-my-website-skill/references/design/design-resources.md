@@ -29,6 +29,7 @@ Sinaida, and adapt rather than clone — a reference is a starting point, and
 - [getdesign.md](https://getdesign.md/) — design systems from major brands.
   The "make it like Apple" reference point — extract the underlying system,
   don't clone the brand.
+  - [refero.design](https://styles.refero.design/) — full design.md examples for agenta.
 
 ## Mobile / app screens
 - [mobbin.com](https://mobbin.com/) — large archive of mobile design examples
