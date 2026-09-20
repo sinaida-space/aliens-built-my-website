@@ -18,6 +18,9 @@ Sinaida, and adapt rather than clone — a reference is a starting point, and
   blocks, copy component-by-component.
 - [21st.dev/community/components](https://21st.dev/community/components) —
   large library of frontend elements: individual blocks, buttons, animations.
+- [obsidianui.dev](https://www.obsidianui.dev/) — free MIT React component
+  library of animated, interactive components (buttons, menus, galleries).
+  Full source files, so markup and styling are yours to adapt.
 - [component.gallery](http://component.gallery) — design systems from real
   products, organized by component type.
 - [designmd.supply](https://www.designmd.supply/) — paste any site's URL, get
@@ -38,6 +41,9 @@ Sinaida, and adapt rather than clone — a reference is a starting point, and
 
 ## Web design galleries by category
 - [curated.design](http://curated.design) — general web design gallery.
+- [inspomcp.dev](https://inspomcp.dev/) — archive of ~830 production sites
+  (2,300+ screenshots) with design notes per site. Also an MCP server
+  (`npx -y inspo-mcp install`) so the agent can pull real references directly.
 - [landing.love](http://landing.love) — landing page patterns.
 - [saaspo.com](http://saaspo.com) — SaaS marketing site patterns.
 - [navbar.gallery](http://navbar.gallery) — navigation bar patterns.
