@@ -102,8 +102,7 @@ A finding here still goes through the normal audit pipeline: numbered,
 rated via `references/compliance/risk-matrix.md`, written into `templates/audit-prd.md`
 — this is a lens for finding gaps, not a separate report format.
 
-Source distillation: Sinaida’s Perplexity research guide
-(`assets/research/perplexity_guide.pdf`), cross-checked against NN/g's
+Source distillation: Sinaida’s own research, cross-checked against NN/g's
 published heuristics; cognitive-load and persona framing adapted from
 [pbakaus/impeccable](https://github.com/pbakaus/impeccable)'s critique
 methodology (checklist knowledge only — no code or scripts imported).

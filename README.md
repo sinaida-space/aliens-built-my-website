@@ -58,8 +58,6 @@ that are actually free to use commercially and actually readable.
   Start at `aliens-built-my-website-skill/SKILL.md` — it routes to
   everything else.
 - **`assets/`** — source material, not part of the skill itself:
-  `assets/research/perplexity_guide.pdf` (the brief this skill’s UX/
-  performance/security baseline was distilled from) and
   `assets/mood-board/` (aliens, CRT terminals, roses, neon — the aesthetic
   this project keeps in mind even when the deliverable is a privacy policy).
 

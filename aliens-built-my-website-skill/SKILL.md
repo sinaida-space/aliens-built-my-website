@@ -36,8 +36,8 @@ practice holds itself to), not a chatbot spitting out a template:
 
 - `references/ux/ux-heuristics.md` — Nielsen Norman Group’s 10 usability heuristics
   ([nngroup.com/articles/ten-usability-heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/))
-  plus navigation/menu and performance-adaptability guidance distilled from
-  Sinaida’s own Perplexity research guide (`assets/research/perplexity_guide.pdf`).
+  plus navigation/menu and performance-adaptability guidance from
+  Sinaida’s own research.
   Read before content approval and before any audit.
 - `references/compliance/security-checklist.md` — HTTPS/TLS, security headers, auth, input
   handling, backups. Non-negotiable baseline for every build and audit.

@@ -102,7 +102,7 @@ Any scroll-triggered animation on a site built or audited by this skill must:
   looks (see `references/ux/performance-adaptive.md`).
 - Never block scroll or hijack scroll position (no scroll-jacking a native
   scrollbar to force a slower narrative pace) unless this is an explicitly
-  commissioned art-direction piece and Sinaida has confirmed she wants that
+  commissioned art-direction piece and the site owner has confirmed they want that
   specific, unusual trade-off.
 - Animate only `transform` and `opacity` — never properties that trigger
   layout/paint (`top`/`left`/`width`/`height`/`margin`) — for both the Solid
