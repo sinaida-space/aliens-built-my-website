@@ -8,8 +8,6 @@
 does it have a real reason to exist, does it solve something, is it beautiful,
 usable, secure, and GDPR-compliant. No exceptions on the last part.
 
-> Production mirror. Development and issue tracking run in a private development environment; releases are published here.
-
 ---
 
 ## Who I am
@@ -86,3 +84,7 @@ Reports gaps by severity — a missing privacy policy outranks a suboptimal f
 <div align="center">
   <img src="assets/mood-board/dark-neon.png" alt="Alien figures beside terminal screens in red and blue neon" width="100%" />
 </div>
+
+This repo is a production mirror.
+
+Development and issue tracking run in a private development environment; releases are published here.
