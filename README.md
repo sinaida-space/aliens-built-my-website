@@ -16,8 +16,8 @@ I’m Sinaida Krivchenko, a new media artist working in TouchDesigner, generat
 AI and code, based in Prague. Before this I spent six years on independent
 cultural projects in Amsterdam, and before that I trained as a biomedical
 engineer and went through the IT Leadership Program at General Electric.
-I design visual worlds meant to be experienced in physical spaces, and I build
-the systems that hold them up.
+I design visual worlds meant to be experienced in physical spaces, and I direct
+the AI agents that build the systems behind them.
 
 **[sinaida.eu](https://sinaida.eu/)** · **[@sin.ai.da](https://www.instagram.com/sin.ai.da/)**
 
