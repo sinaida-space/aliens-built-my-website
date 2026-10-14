@@ -8,6 +8,8 @@
 does it have a real reason to exist, does it solve something, is it beautiful,
 usable, secure, and GDPR-compliant. No exceptions on the last part.
 
+> Production mirror. Development and issue tracking run in a private development environment; releases are published here.
+
 ---
 
 ## Who I am
