@@ -1,0 +1,71 @@
+# Privacy Policy
+
+_Last updated: [DATE]_
+
+Fill every `[PLACEHOLDER]` with this site's real facts before publishing. Never
+leave placeholder text live. Delete any section that's genuinely not applicable
+(e.g. "Payment Data" for a site with no store) rather than leaving it vague.
+
+## 1. Who we are
+[BUSINESS/INDIVIDUAL NAME], based in [LOCATION], is the data controller for this
+website ([SITE URL]). Contact for privacy questions: [CONTACT EMAIL].
+
+## 2. What data we collect
+- **Automatically**: IP address, browser/device type, pages visited, referrer
+  (via [ANALYTICS TOOL, e.g. "privacy-respecting analytics" or "none"]).
+- **Provided by you**: [e.g. name and email via the contact form; mailing list
+  signup email]. On [FORM NAME, e.g. "the contact form"], [REQUIRED FIELDS, e.g.
+  "name and email"] are required to [CONSEQUENCE, e.g. "send you a reply"];
+  [OPTIONAL FIELDS, e.g. "phone number"] are optional and only used if provided.
+- **Cookies**: see our [Cookie Policy / the Cookies section below].
+
+## 3. Why we collect it
+- [Service delivery — e.g. responding to contact form submissions]
+- [Analytics — understanding how the site is used, if applicable]
+- [Marketing — e.g. mailing list, if applicable]
+
+## 4. Legal basis
+- Contact form / direct communication: **legitimate interest** in responding to
+  your inquiry.
+- Analytics (if non-essential): **consent**, collected via the cookie banner.
+- Mailing list (if applicable): **consent**, given at signup.
+
+## 5. How long we keep it
+- Contact form submissions: [RETENTION PERIOD, e.g. "12 months"].
+- Analytics data: [RETENTION PERIOD per tool's default or your configuration].
+- Mailing list: until you unsubscribe.
+
+## 6. Who we share it with
+- [HOSTING PROVIDER]
+- [ANALYTICS PROVIDER, if any]
+- [EMAIL/MAILING LIST PROVIDER, if any]
+- We do not sell your data. [Note any transfer outside the EU/EEA and its safeguard,
+  e.g. Standard Contractual Clauses, if applicable.]
+
+## 7. Your rights
+Under GDPR you have the right to access, correct, delete, restrict, or port your
+data, and to object to or withdraw consent for its processing. We respond to
+access and deletion requests within one month, and the first copy of your data is
+free. To exercise any of these, contact [CONTACT EMAIL]. You also have the right
+to lodge a complaint with your local data protection authority.
+
+## 8. Automated decision-making
+[This site does not use automated decision-making or profiling that produces
+legal or similarly significant effects. / If it does: describe what it does, the
+logic involved, and its significance/consequences for you.]
+
+## 9. Security
+We use industry-standard measures (encrypted transport via HTTPS, access controls)
+to protect your data. No online system is 100% secure, but we take reasonable steps
+to safeguard what we collect. [Only if this site has a backend/database: In the
+unlikely event of a data breach affecting your rights, we will notify the
+relevant supervisory authority within 72 hours and inform you directly where
+required.]
+
+## 10. Changes to this policy
+We may update this policy from time to time; the "Last updated" date above reflects
+the most recent revision. Material changes will be noted here.
+
+## 11. Contact
+Questions about this policy: [CONTACT EMAIL]. This policy is linked from every
+page of this site and is free to access at any time.
