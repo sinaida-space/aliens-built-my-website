@@ -60,6 +60,7 @@ that are actually free to use commercially and actually readable.
 - **`assets/`** — source material, not part of the skill itself:
   `assets/mood-board/` (aliens, CRT terminals, roses, neon — the aesthetic
   this project keeps in mind even when the deliverable is a privacy policy).
+  The images in `assets/` are mine, made with Midjourney.
 
 ## How it works
 
