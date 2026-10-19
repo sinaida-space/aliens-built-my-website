@@ -101,7 +101,7 @@ auto-scrolling marquees — here it's also a hard accessibility requirement, not
 just a style preference.
 
 **2.3.1 Three flashes (A)** — nothing flashes more than 3×/second — relevant
-to any generative/shader-driven visual content on Sinaida's own sites; check
+to any generative/shader-driven visual content on the author's own sites; check
 any animated background against this explicitly, don't assume it's fine.
 
 **2.4.1 Bypass blocks (A)** — a "skip to main content" link (visually hidden
@@ -132,7 +132,7 @@ Already in the implementation checklist; this is its source requirement.
 multi-touch or device-motion interaction (swipe, shake-to-undo) has a
 single-pointer/UI-button equivalent, and motion-triggered functionality can be
 disabled (relevant to any TouchDesigner-adjacent interactive/installation-style
-web piece Sinaida builds).
+web piece the user builds).
 
 **2.5.2 Pointer cancellation (A)** — pressing down doesn't commit an action;
 the action fires on release (and can be aborted by dragging off the target
@@ -152,7 +152,7 @@ here too even though the WCAG level is technically AAA.
 
 **3.1.1 Language of page (A)** — `<html lang="...">` set correctly (and
 `lang` on any embedded passage in a different language) — matters directly for
-Sinaida's Russian/English bilingual content.
+the user's Russian/English bilingual content.
 
 **3.2.1 On focus (A)** / **3.2.2 On input (A)** — focusing or changing a form
 field never triggers an unexpected context change (auto-submitting a form,

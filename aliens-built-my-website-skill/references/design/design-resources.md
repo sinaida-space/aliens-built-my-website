@@ -8,7 +8,7 @@ actual tokens/components/animation techniques, then adapt them to this site's
 own `tokens.css` and voice — never ship a copy-pasted block unchanged).
 
 Always disclose which site inspired a direction when presenting options to
-Sinaida, and adapt rather than clone — a reference is a starting point, and
+the user, and adapt rather than clone — a reference is a starting point, and
 `references/design/anti-slop.md` still applies to whatever comes out the other end.
 
 ## Full design systems / component + token libraries
@@ -71,7 +71,7 @@ Sinaida, and adapt rather than clone — a reference is a starting point, and
   effects for AI-style interfaces.
 - [originkit.dev](https://originkit.dev/) — free library of animated components.
 - These are high-novelty/high-cost effects — treat like `references/design/glow-logo.md`:
-  only pull one in if Sinaida explicitly wants that specific look, not by
+  only pull one in if the user explicitly wants that specific look, not by
   default for "make it beautiful." Check performance cost against
   `references/ux/performance-adaptive.md` before shipping any WebGL/canvas effect.
 
