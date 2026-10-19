@@ -72,7 +72,7 @@ flow. Never let it displace accessibility/security/GDPR, which stay non-negotiab
 
 These four are early-stage and mutually competing standards for letting an
 agent complete a purchase autonomously. Do not implement speculatively — flag
-as "watch" unless Sinaida is explicitly building a storefront/checkout an
+as "watch" unless the user is explicitly building a storefront/checkout an
 agent should be able to transact against.
 
 ## Quick wins (do these on every build/audit regardless of site type)

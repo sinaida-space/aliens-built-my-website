@@ -1,6 +1,6 @@
 # HDR glow/bloom logo technique — opt-in only
 
-**Never apply this by default.** Only use it when Sinaida explicitly asks for a
+**Never apply this by default.** Only use it when the user explicitly asks for a
 bloom/glow/HDR logo effect. A "make it beautiful" or "make it pop" request is not
 sufficient — ask her to confirm she means this specific effect first, since it has
 real trade-offs (below).
@@ -27,7 +27,7 @@ ffprobe -show_entries stream=color_transfer,color_primaries your-logo-hdr.png
 ```
 Expect `color_transfer=smpte2084` and `color_primaries=bt2020`.
 
-## Trade-offs — tell Sinaida these before applying
+## Trade-offs — tell the user these before applying
 - **Works**: modern iPhones, MacBooks, and other HDR-capable displays — the glow
   areas will genuinely appear to emit light beyond normal screen brightness.
 - **Fails gracefully but looks bad on**: standard SDR monitors (many

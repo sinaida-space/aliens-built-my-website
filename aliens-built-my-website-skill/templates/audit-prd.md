@@ -3,12 +3,12 @@
   summary — write the finished report to
   `docs/audits/<site-slug>-audit-<YYYY-MM-DD>.md` in the site's own repo/project
   if one exists, or the current working directory if it doesn't, and tell
-  Sinaida the file path when done. The document exists regardless of what she
+  the user the file path when done. The document exists regardless of what she
   decides to do about the findings — diagnosis and action are separate steps.
 -->
 
 # [Site name] — Website Audit
-**Prepared for:** [Client/Sinaida] &nbsp;·&nbsp; **Date:** [DATE] &nbsp;·&nbsp; **Scope:** [URL(s) / repo audited]
+**Prepared for:** [Client] &nbsp;·&nbsp; **Date:** [DATE] &nbsp;·&nbsp; **Scope:** [URL(s) / repo audited]
 
 ## Executive summary
 [2-4 sentences, written the way a top-tier consulting deliverable opens: what

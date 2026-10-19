@@ -36,7 +36,7 @@ default to it rather than writing a new banner from scratch.
 ## Privacy policy — required content
 1. Who you are (name/company, contact, data controller) **and DPO contact if one
    exists** (only mandatory for public authorities or large-scale systematic
-   monitoring — most of Sinaida's client sites won't need one; say so rather than
+   monitoring — most of the user's client sites won't need one; say so rather than
    inventing a DPO).
 2. What data is collected (name, email, IP, usage data, cookies, form submissions),
    and **which fields are mandatory vs. optional** on any form, with the

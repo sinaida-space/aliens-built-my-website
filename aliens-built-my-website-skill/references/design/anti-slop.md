@@ -75,11 +75,11 @@ if it trips these.
 ## Copy
 - Ban generic buzzwords: "streamline," "empower," "supercharge," "world-class,"
   "enterprise-grade," and their close cousins — say what the thing actually does.
-  This is consistent with Sinaida's own anti-voice rules already (no LinkedIn-speak,
+  This is consistent with the author's own anti-voice rules already (no LinkedIn-speak,
   no "passionate about") — treat both as one standard, not two.
 - Don't reflexively frame a competing idea as "theater" or dismiss it with a
   manufactured contrast ("this isn't X, it's Y") as a rhetorical crutch —
-  Sinaida's own writing rules already ban the "A, not B" construction outright;
+  the author's own writing rules already ban the "A, not B" construction outright;
   this is the same tell showing up in web copy specifically.
 - More than a couple of em-dashes in body copy reads as an AI cadence tell —
   restructure into separate sentences instead.
@@ -106,7 +106,7 @@ if it trips these.
 - No generic shape-assembled SVG illustrations that read as stock/placeholder
   filler rather than actual content.
 - No amateurish hand-coded SVG mascots/scenes unless that's a deliberate part of
-  the brand's visual language (check with Sinaida — her own aesthetic runs
+  the brand's visual language (check with the user — her own aesthetic runs
   toward cyberpunk/gothic/clinical, not cutesy SVG mascots, so this would almost
   always be a mismatch for her work specifically).
 - No broken or missing image sources shipped to production — verify every asset

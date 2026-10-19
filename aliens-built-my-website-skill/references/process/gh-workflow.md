@@ -1,7 +1,7 @@
-# GitHub hygiene for site work synced to sinaida-space/aliens-built-my-website
+# GitHub hygiene for site work synced to the project's own repo
 
 Issues are the task manager; branches map to issues; PRs merge to main. Push in
-batches, and confirm with Sinaida before every push to the shared repo — standard
+batches, and confirm with the user before every push to the shared repo — standard
 practice, not specific distrust of this workflow.
 
 ## Issues as task list
@@ -38,6 +38,6 @@ one — catching a bad block early is cheap; unwinding a full-site rewrite isn't
 ## Push discipline
 - Batch related commits into one push rather than pushing after every file edit.
 - Before any push: `git status`, review the diff, confirm nothing sensitive
-  (API keys, `.env`, credentials) is staged, then ask Sinaida to confirm the push.
+  (API keys, `.env`, credentials) is staged, then ask the user to confirm the push.
 - Never force-push to `main`; only force-push a feature branch, and only after
   confirming she's not mid-review on it.

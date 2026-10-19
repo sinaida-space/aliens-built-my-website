@@ -1,6 +1,6 @@
 ---
 name: aliens-built-my-website
-description: The superhero of webdesign skills — builds new websites and audits existing ones against one bar: does it have a real reason to exist, does it solve a business problem, is it beautiful, usable, secure, and GDPR-compliant. For “build me a website” requests, runs a content-approval interview before any implementation. For "check/audit my site" requests, runs the same skill in audit mode against the identical checklist. Use whenever Sinaida asks to build, design, redesign, or review a website, landing page, or web app.
+description: The superhero of webdesign skills — builds new websites and audits existing ones against one bar: does it have a real reason to exist, does it solve a business problem, is it beautiful, usable, secure, and GDPR-compliant. For “build me a website” requests, runs a content-approval interview before any implementation. For "check/audit my site" requests, runs the same skill in audit mode against the identical checklist. Use whenever the user asks to build, design, redesign, or review a website, landing page, or web app.
 ---
 
 # aliens-built-my-website — website builder & auditor
@@ -37,7 +37,7 @@ practice holds itself to), not a chatbot spitting out a template:
 - `references/ux/ux-heuristics.md` — Nielsen Norman Group’s 10 usability heuristics
   ([nngroup.com/articles/ten-usability-heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/))
   plus navigation/menu and performance-adaptability guidance from
-  Sinaida’s own research.
+  the author’s own research.
   Read before content approval and before any audit.
 - `references/compliance/security-checklist.md` — HTTPS/TLS, security headers, auth, input
   handling, backups. Non-negotiable baseline for every build and audit.
@@ -85,7 +85,7 @@ practice holds itself to), not a chatbot spitting out a template:
 - `references/ux/performance-adaptive.md` — how to build the fast/slow-network,
   low/high-GPU adaptive mode (a “light mode” that degrades gracefully).
 - `references/process/gh-workflow.md` — issues-as-task-manager + branch hygiene for
-  syncing work to `sinaida-space/aliens-built-my-website`.
+  syncing work to the project's own repo.
 - `references/design/design-resources.md` — curated external references (Aura,
   21st.dev, Mobbin, DesignMD.supply, curated.design, and others) for pulling
   real design directions, components, and animation techniques instead of
@@ -93,7 +93,7 @@ practice holds itself to), not a chatbot spitting out a template:
   concrete options, and during implementation to source tokens/components —
   always adapt into this site’s own `tokens.css`, never ship copy-pasted.
 - `references/design/glow-logo.md` — HDR glow/bloom logo technique. **Opt-in only** —
-  read and apply this only if Sinaida explicitly asks for bloom/glow/HDR branding.
+  read and apply this only if the user explicitly asks for bloom/glow/HDR branding.
   Never apply by default, even in “make it beautiful” requests.
 - `references/compliance/risk-matrix.md` — the Impact × Probability rating method every
   audit finding is scored against, and the combined-rating lookup table
@@ -111,7 +111,7 @@ practice holds itself to), not a chatbot spitting out a template:
 - `templates/404.md` — how to design a site-styled 404 (not a generic template,
   since it must inherit each site’s actual visual language).
 - `scripts/hdr_glow.py` — implements the glow-logo technique. Only run this if
-  Sinaida explicitly asked for glow/bloom branding this session.
+  the user explicitly asked for glow/bloom branding this session.
 
 ## Mode detection
 
@@ -171,7 +171,7 @@ the color values next to it.
 - [] A single `tokens.css` (or equivalent) holding every color, font, spacing
       unit, and grid value used on the site — pulled from `references/design/fonts.md`
       and `references/design/typography.md`. Every other file references these tokens;
-      no hardcoded hex/px value gets introduced outside this file, by Sinaida or
+      no hardcoded hex/px value gets introduced outside this file, by the user or
       by the agent. "Other colors simply don't exist" for implementation.
 - [] Full WCAG 2.1 AA pass per `references/compliance/accessibility-wcag.md` — semantic
       HTML, heading hierarchy, keyboard navigation, visible focus, alt text,
@@ -231,7 +231,7 @@ and every image is optimized to tens of KB, not megabytes.
 
 ### 5. Ship via GitHub properly
 Follow `references/process/gh-workflow.md`: an issue per feature/page, a branch per issue,
-PR back to main. Push in batches, and confirm with Sinaida before each push per
+PR back to main. Push in batches, and confirm with the user before each push per
 standard practice for a shared repo.
 
 ---

@@ -130,7 +130,7 @@ p { text-wrap: pretty; } /* where supported — orphan control for body text */
   a negative-margin/`::before` trick as fallback).
 - **Ordinal and fraction handling**: use `<sup>` sparingly and real fraction
   characters (`½`) where available rather than `1/2`, if the brand voice is
-  precise/clinical (matches Sinaida's ECG/lab-note aesthetic).
+  precise/clinical (matches the user's ECG/lab-note aesthetic).
 
 ## 6. Contrast and accessibility (ties to `references/compliance/accessibility-wcag.md`)
 
